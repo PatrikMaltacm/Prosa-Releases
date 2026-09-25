@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Prosa - Comunicação Simplificada</title>
+    <meta name="description" content="Baixe o Prosa, a plataforma de comunicação por chat, voz e tela, rápida e organizada.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/app-icon.png" type="image/png">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+    </div>
+
+    <main class="container">
+        <header class="header">
+            <img src="assets/app-icon.png" alt="Prosa Logo" class="logo animate-fade-in">
+            <h1 class="title animate-slide-up">Bem-vindo ao Prosa</h1>
+            <p class="subtitle animate-slide-up delay-1">Comunicação em tempo real para comunidades e amigos. Simples, rápido e acessível.</p>
+        </header>
+
+        <section class="downloads-section animate-slide-up delay-2">
+            <h2>Escolha sua plataforma</h2>
+            <div class="download-cards">
+                
+                <!-- Windows -->
+                <div class="card glass-panel">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7v7H4z"/><path d="M13 4h7v7h-7z"/><path d="M4 13h7v7H4z"/><path d="M13 13h7v7h-7z"/></svg>
+                    </div>
+                    <h3>Windows</h3>
+                    <p>Windows 10 e 11 (64-bit)</p>
+                    <button class="btn btn-primary" onclick="downloadApp('windows')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                        Baixar para Windows
+                    </button>
+                </div>
+
+                <!-- macOS -->
+                <div class="card glass-panel">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"/><path d="M10 2c1 .5 2 2 2 5"/></svg>
+                    </div>
+                    <h3>macOS</h3>
+                    <p>macOS 10.15 ou superior (Apple Silicon / Intel)</p>
+                    <button class="btn btn-primary" onclick="downloadApp('macos')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                        Baixar para macOS
+                    </button>
+                </div>
+
+                <!-- Linux -->
+                <div class="card glass-panel">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 10 4-6 4 6"/><path d="m22 20-6-4-4 4-4-4-6 4"/><path d="M12 22V4"/></svg>
+                    </div>
+                    <h3>Linux</h3>
+                    <p>AppImage / .deb</p>
+                    <button class="btn btn-primary" onclick="downloadApp('linux')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                        Baixar para Linux
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="about-section animate-slide-up delay-3 glass-panel" style="padding: 32px; border-radius: var(--radius-lg); margin-bottom: 40px;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 20px; color: var(--color-brand-400);">Sobre o Prosa e o Desenvolvedor</h2>
+            <p style="margin-bottom: 16px; line-height: 1.6; color: var(--color-text-secondary);">
+                O Prosa é um projeto independente, desenvolvido inteiramente por mim, 
+                <strong><a href="https://www.linkedin.com/in/patrik-malta-1160552b6" target="_blank" class="link" style="color: var(--color-brand-300); text-decoration: none;">Patrik Malta</a></strong> 
+                (<a href="https://github.com/PatrikMaltacm" target="_blank" class="link" style="color: var(--color-brand-300); text-decoration: none;">GitHub</a>). 
+                Sendo um desenvolvedor solo, conto com o auxílio de Inteligência Artificial para agilizar o desenvolvimento do código. 
+                Porém, isso não diminui nossa responsabilidade: temos o máximo de cuidado e compromisso com a segurança e a proteção dos seus dados.
+            </p>
+            <p style="margin-bottom: 16px; line-height: 1.6; color: var(--color-text-secondary);">
+                O aplicativo está sendo construído para e com a comunidade, inspirado em iniciativas brasileiras fantásticas como o <a href="https://www.catarse.com.br/trivo-app" target="_blank" class="link" style="color: var(--color-brand-300); text-decoration: none;">Trivo App</a>. Como não possuímos recursos financeiros ilimitados, a nossa infraestrutura atual ainda é básica. Você já pode utilizar os recursos, mas pedimos compreensão e cautela com eventuais limites dos servidores.
+            </p>
+            <div class="alert-info" style="background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.3); padding: 16px; border-radius: var(--radius-md); margin-top: 24px; color: var(--color-text-primary);">
+                <strong>Atenção:</strong> Inicialmente, o Prosa é destinado <strong>apenas a maiores de 18 anos</strong>. Estamos estudando formas seguras de implementar um controle de idade e verificação no futuro.
+            </div>
+        </section>
+
+        <section class="info-section animate-slide-up delay-4">
+            <div class="glass-panel alert-warning">
+                <div class="alert-icon">⚠️</div>
+                <div class="alert-content">
+                    <h4>Fase de Testes (Beta)</h4>
+                    <p>O Prosa ainda está em desenvolvimento. Você pode encontrar instabilidades ou recursos incompletos. Seus feedbacks são muito bem-vindos para melhorar a aplicação!</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer animate-fade-in delay-4">
+            <p style="margin-bottom: 8px;">Desenvolvido por Patrik Malta para a comunidade.</p>
+            <div style="display: flex; gap: 16px; justify-content: center; font-size: 0.8rem; margin-top: 12px;">
+                <a href="termos.html" style="color: var(--color-text-muted); text-decoration: underline;">Termos de Uso</a>
+                <a href="privacidade.html" style="color: var(--color-text-muted); text-decoration: underline;">Política de Privacidade (LGPD)</a>
+            </div>
+        </footer>
+    </main>
+
+    <div id="toast" class="toast">Iniciando download...</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

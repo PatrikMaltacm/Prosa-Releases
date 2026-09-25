@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade e LGPD - Prosa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/app-icon.png" type="image/png">
+    <style>
+        .document-panel {
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            text-align: left;
+            margin-top: 40px;
+        }
+        .document-panel h1 { font-size: 2rem; color: var(--color-brand-400); margin-bottom: 24px; }
+        .document-panel h2 { font-size: 1.25rem; color: var(--color-text-primary); margin-top: 24px; margin-bottom: 12px; }
+        .document-panel p { color: var(--color-text-secondary); margin-bottom: 16px; line-height: 1.6; }
+        .document-panel ul { color: var(--color-text-secondary); margin-bottom: 16px; padding-left: 20px; line-height: 1.6; }
+        .document-panel li { margin-bottom: 8px; }
+        .back-btn { display: inline-flex; align-items: center; gap: 8px; color: var(--color-brand-300); text-decoration: none; margin-bottom: 20px; font-weight: 500; }
+        .back-btn:hover { color: var(--color-brand-400); }
+    </style>
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+    </div>
+
+    <main class="container">
+        <div class="glass-panel document-panel animate-fade-in">
+            <a href="index.html" class="back-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                Voltar para a página inicial
+            </a>
+            
+            <h1>Política de Privacidade (LGPD)</h1>
+            <p><strong>Última atualização:</strong> Setembro de 2026</p>
+
+            <p>Bem-vindo ao Prosa. A sua privacidade e a segurança dos seus dados são prioridades absolutas para nós. Este documento explica como coletamos, utilizamos e protegemos as suas informações, em conformidade com a Lei Geral de Proteção de Dados Pessoais (LGPD - Lei nº 13.709/2018).</p>
+
+            <h2>1. O que é o Prosa?</h2>
+            <p>O Prosa é um aplicativo independente de comunicação (texto, voz e vídeo), desenvolvido de forma solo por Patrik Malta, utilizando ferramentas de Inteligência Artificial para auxiliar na escrita de código. No entanto, <strong>nenhuma Inteligência Artificial tem acesso ao banco de dados, às conversas ou aos dados pessoais dos usuários.</strong></p>
+
+            <h2>2. Dados que Coletamos</h2>
+            <ul>
+                <li><strong>Informações de Cadastro:</strong> Nome de usuário, e-mail e senha criptografada (hash).</li>
+                <li><strong>Dados de Comunicação:</strong> Mensagens de texto enviadas em canais e DMs, que são armazenadas de forma segura em nossos servidores.</li>
+                <li><strong>Dados de Uso:</strong> Informações de presença (status online/offline) gerenciadas de forma transitória em memória.</li>
+                <li><strong>Conteúdo de Voz e Vídeo:</strong> As transmissões de áudio e vídeo trafegam de forma isolada e <strong>não são gravadas ou armazenadas</strong> por nós.</li>
+            </ul>
+
+            <h2>3. Finalidade da Coleta</h2>
+            <p>Os seus dados são utilizados exclusivamente para permitir o funcionamento do aplicativo: entregar suas mensagens, autenticar sua conta, notificar seus amigos de que você está online e conectar chamadas de voz e vídeo. Nós <strong>não vendemos, não alugamos e não compartilhamos</strong> seus dados com anunciantes ou terceiros.</p>
+
+            <h2>4. Segurança da Informação</h2>
+            <p>O Prosa adota medidas de segurança robustas na sua arquitetura (Clean Architecture, Tokens JWT, senhas com salt/hash forte, e comunicação WebSocket restrita por grupos no SignalR). No entanto, por ser um projeto gerido por um único desenvolvedor com recursos limitados, pedimos cautela no compartilhamento de dados extremamente sensíveis na plataforma.</p>
+
+            <h2>5. Classificação Indicativa e Controle de Idade</h2>
+            <p>O Prosa é atualmente <strong>destinado exclusivamente para maiores de 18 anos.</strong> Não coletamos intencionalmente dados de menores de idade. Estamos estudando a implementação de mecanismos robustos de verificação de idade para o futuro. Se identificarmos que um usuário é menor de idade, sua conta e seus dados serão excluídos imediatamente.</p>
+
+            <h2>6. Seus Direitos (LGPD)</h2>
+            <p>Você tem o direito de solicitar o acesso, a correção e a exclusão (anonimização/deleção) completa de seus dados e conta a qualquer momento. Para exercer esses direitos, ou para tirar dúvidas sobre nossa política, entre em contato através dos canais oficiais do projeto (GitHub ou LinkedIn do desenvolvedor).</p>
+
+            <div style="margin-top: 40px; text-align: center; color: var(--color-text-muted); font-size: 0.875rem;">
+                Desenvolvido por Patrik Malta.
+            </div>
+        </div>
+    </main>
+</body>
+</html>

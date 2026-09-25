@@ -1,10 +1,30 @@
-# Prosa Releases
+<div align="center">
+  <img src="assets/app-icon.png" alt="Prosa Logo" width="150" height="150">
+  
+  # Prosa Releases
+  
+  **O Prosa é um aplicativo de comunicação inspirado no Discord, desenvolvido para reunir pessoas em um só lugar por meio de chat de texto, chat de voz e transmissão de tela.**
+</div>
 
-O Prosa é um aplicativo de comunicação inspirado no Discord, desenvolvido para reunir pessoas em um só lugar por meio de chat de texto, chat de voz e transmissão de tela.
+---
 
 Este repositório é usado exclusivamente para armazenar e publicar as releases oficiais do Prosa, permitindo o acesso fácil às versões disponibilizadas do aplicativo.
 
-## ⚠️ Fase de testes
+Também incluímos aqui uma página simples de downloads com a identidade visual do Prosa!
+
+## Downloads
+
+Acesse as versões na página oficial ou na aba **Releases** deste repositório.
+
+| Plataforma | Suporte |
+| :--- | :--- |
+| **Windows** | Windows 10 e 11 (64-bit) |
+| **macOS** | macOS 10.15+ (Apple Silicon & Intel) |
+| **Linux** | AppImage / .deb |
+
+---
+
+## Fase de testes (Beta)
 
 O Prosa está atualmente em fase de testes. Isso significa que as versões disponíveis neste repositório podem conter:
 
@@ -22,8 +42,11 @@ O objetivo do Prosa é oferecer uma experiência de comunicação simples, rápi
 
 A ideia é criar uma plataforma para comunidades, grupos e pessoas que desejam se comunicar de forma fluida e organizada.
 
-## Releases
-
 As versões oficiais do Prosa serão publicadas na seção de releases deste repositório.
 
-Agradecemos por testar o projeto e ajudar a melhorar o Prosa.
+Agradecemos por testar o projeto e ajudar a melhorar o Prosa!
+
+---
+<div align="center">
+  Feito pela equipe do Prosa.
+</div>
