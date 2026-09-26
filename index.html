@@ -14,16 +14,30 @@
         <div class="glow glow-1"></div>
         <div class="glow glow-2"></div>
     </div>
+    <nav class="navbar animate-fade-in">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="assets/app-icon.png" alt="Prosa Logo" class="nav-logo">
+                <span class="nav-title">Prosa</span>
+            </div>
+            <div class="nav-links">
+                <a href="#downloads">Downloads</a>
+                <a href="#features">Recursos</a>
+                <a href="#about">Sobre</a>
+            </div>
+        </div>
+    </nav>
 
     <main class="container">
-        <header class="header">
-            <img src="assets/app-icon.png" alt="Prosa Logo" class="logo animate-fade-in">
-            <h1 class="title animate-slide-up">Bem-vindo ao Prosa</h1>
-            <p class="subtitle animate-slide-up delay-1">Comunicação em tempo real para comunidades e amigos. Simples, rápido e acessível.</p>
-        </header>
+        <section id="downloads" class="fullscreen-section">
+            <header class="header">
+                <img src="assets/app-icon.png" alt="Prosa Logo" class="logo animate-fade-in">
+                <h1 class="title animate-slide-up">Bem-vindo ao Prosa</h1>
+                <p class="subtitle animate-slide-up delay-1">Comunicação em tempo real para comunidades e amigos. Simples, rápido e acessível.</p>
+            </header>
 
-        <section class="downloads-section animate-slide-up delay-2">
-            <h2>Escolha sua plataforma</h2>
+            <div class="downloads-section animate-slide-up delay-2">
+                <h2>Escolha sua plataforma</h2>
             <div class="download-cards">
                 
                 <!-- Windows -->
@@ -68,27 +82,63 @@
             </div>
         </section>
 
-        <section class="about-section animate-slide-up delay-3 glass-panel" style="padding: 32px; border-radius: var(--radius-lg); margin-bottom: 40px;">
-            <h2 style="font-size: 1.5rem; margin-bottom: 20px; color: var(--color-brand-400);">Sobre o Prosa e o Desenvolvedor</h2>
-            <p style="margin-bottom: 16px; line-height: 1.6; color: var(--color-text-secondary);">
-                O Prosa é um projeto independente, desenvolvido inteiramente por mim, 
-                <strong><a href="https://www.linkedin.com/in/patrik-malta-1160552b6" target="_blank" class="link" style="color: var(--color-brand-300); text-decoration: none;">Patrik Malta</a></strong> 
-                (<a href="https://github.com/PatrikMaltacm" target="_blank" class="link" style="color: var(--color-brand-300); text-decoration: none;">GitHub</a>). 
-                Sendo um desenvolvedor solo, conto com o auxílio de Inteligência Artificial para agilizar o desenvolvimento do código. 
-                Porém, isso não diminui nossa responsabilidade: temos o máximo de cuidado e compromisso com a segurança e a proteção dos seus dados.
-            </p>
-            <p style="margin-bottom: 16px; line-height: 1.6; color: var(--color-text-secondary);">
-                O aplicativo está sendo construído para e com a comunidade. Como não possuímos recursos financeiros ilimitados, a nossa infraestrutura atual ainda é básica. Você já pode utilizar os recursos, mas pedimos compreensão e cautela com eventuais limites dos servidores.
-            </p>
-            <p style="margin-bottom: 16px; line-height: 1.6; color: var(--color-text-secondary);">
-                Um dos nossos principais pilares é a <strong>performance</strong>. O Prosa foi desenhado e otimizado para ser extremamente leve, consumindo o mínimo possível de CPU e Memória RAM. O objetivo é garantir que você possa ficar em chamadas de voz e compartilhar tela com seus amigos sem perder FPS ou atrapalhar sua gameplay.
-            </p>
-            <div class="alert-info" style="background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.3); padding: 16px; border-radius: var(--radius-md); margin-top: 24px; color: var(--color-text-primary);">
-                <strong>Atenção:</strong> Inicialmente, o Prosa é destinado <strong>apenas a maiores de 18 anos</strong>. Estamos estudando formas seguras de implementar um controle de idade e verificação no futuro.
+        <section id="features" class="features-section animate-slide-up delay-2 fullscreen-section">
+            <h2 style="text-align: center; font-size: 1.5rem; margin-bottom: 30px; color: var(--color-text-primary);">O que o Prosa já oferece</h2>
+            <div class="features-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; width: 100%;">
+                
+                <!-- Chat de Voz -->
+                <div class="feature-card glass-panel" style="padding: 32px 24px; border-radius: var(--radius-lg); text-align: center; display: flex; flex-direction: column; align-items: center;">
+                    <div class="feature-icon" style="color: var(--color-brand-400); margin-bottom: 20px; background: rgba(99, 102, 241, 0.1); width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+                    </div>
+                    <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--color-text-primary);">Chat de Voz</h3>
+                    <p style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.5;">Converse com seus amigos em tempo real com áudio de alta qualidade e baixíssima latência.</p>
+                </div>
+
+                <!-- Transmissão de Tela -->
+                <div class="feature-card glass-panel" style="padding: 32px 24px; border-radius: var(--radius-lg); text-align: center; display: flex; flex-direction: column; align-items: center;">
+                    <div class="feature-icon" style="color: var(--color-brand-400); margin-bottom: 20px; background: rgba(99, 102, 241, 0.1); width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+                    </div>
+                    <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--color-text-primary);">Transmissão de Tela</h3>
+                    <p style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.5;">Compartilhe sua gameplay ou qualquer tela do seu computador com a galera do servidor instantaneamente.</p>
+                </div>
+
+                <!-- Avatares Personalizados -->
+                <div class="feature-card glass-panel" style="padding: 32px 24px; border-radius: var(--radius-lg); text-align: center; display: flex; flex-direction: column; align-items: center;">
+                    <div class="feature-icon" style="color: var(--color-brand-400); margin-bottom: 20px; background: rgba(99, 102, 241, 0.1); width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--color-text-primary);">Avatares Customizados</h3>
+                    <p style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.5;">Envie sua própria foto de perfil para ter a sua cara registrada no app inteiro.</p>
+                </div>
+
             </div>
         </section>
 
-        <section class="info-section animate-slide-up delay-4">
+        <section id="about" class="fullscreen-section">
+            <div class="about-section animate-slide-up delay-3 glass-panel" style="padding: 32px; border-radius: var(--radius-lg); width: 100%;">
+                <h2 style="font-size: 1.5rem; margin-bottom: 20px; color: var(--color-brand-400);">Sobre o Prosa e o Desenvolvedor</h2>
+                <p style="margin-bottom: 16px; line-height: 1.6; color: var(--color-text-secondary);">
+                    O Prosa é um projeto independente, desenvolvido inteiramente por mim, 
+                    <strong><a href="https://www.linkedin.com/in/patrik-malta-1160552b6" target="_blank" class="link" style="color: var(--color-brand-300); text-decoration: none;">Patrik Malta</a></strong> 
+                    (<a href="https://github.com/PatrikMaltacm" target="_blank" class="link" style="color: var(--color-brand-300); text-decoration: none;">GitHub</a>). 
+                    Sendo um desenvolvedor solo, conto com o auxílio de Inteligência Artificial para agilizar o desenvolvimento do código. 
+                    Porém, isso não diminui nossa responsabilidade: temos o máximo de cuidado e compromisso com a segurança e a proteção dos seus dados.
+                </p>
+                <p style="margin-bottom: 16px; line-height: 1.6; color: var(--color-text-secondary);">
+                    O aplicativo está sendo construído para e com a comunidade. Como não possuímos recursos financeiros ilimitados, a nossa infraestrutura atual ainda é básica. Você já pode utilizar os recursos, mas pedimos compreensão e cautela com eventuais limites dos servidores.
+                </p>
+                <p style="margin-bottom: 16px; line-height: 1.6; color: var(--color-text-secondary);">
+                    Um dos nossos principais pilares é a <strong>performance</strong>. O Prosa foi desenhado e otimizado para ser extremamente leve, consumindo o mínimo possível de CPU e Memória RAM. O objetivo é garantir que você possa ficar em chamadas de voz e compartilhar tela com seus amigos sem perder FPS ou atrapalhar sua gameplay.
+                </p>
+                <div class="alert-info" style="background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.3); padding: 16px; border-radius: var(--radius-md); margin-top: 24px; color: var(--color-text-primary);">
+                    <strong>Atenção:</strong> Inicialmente, o Prosa é destinado <strong>apenas a maiores de 18 anos</strong>. Estamos estudando formas seguras de implementar um controle de idade e verificação no futuro.
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section animate-slide-up delay-4" style="margin-bottom: 40px; margin-top: 40px;">
             <div class="glass-panel alert-warning">
                 <div class="alert-icon">⚠️</div>
                 <div class="alert-content">
