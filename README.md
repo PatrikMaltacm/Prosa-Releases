@@ -42,6 +42,8 @@ O objetivo do Prosa é oferecer uma experiência de comunicação simples, rápi
 
 A ideia é criar uma plataforma para comunidades, grupos e pessoas que desejam se comunicar de forma fluida e organizada.
 
+Um dos nossos principais pilares é a **performance**. O Prosa foi desenhado e otimizado para ser extremamente leve, consumindo o mínimo possível de CPU e Memória RAM. O objetivo é garantir que você possa ficar em chamadas de voz e compartilhar tela com seus amigos sem perder FPS ou atrapalhar sua gameplay.
+
 As versões oficiais do Prosa serão publicadas na seção de releases deste repositório.
 
 Agradecemos por testar o projeto e ajudar a melhorar o Prosa!
